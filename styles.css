@@ -1,0 +1,69 @@
+body{
+    display: flex; /* deixa os elementos (div class) flexíveis */
+    flex-direction: column; /* elementos (div class) irão aparecer em colunas, um debaixo do outro */
+    justify-content: center; /* deixa os elementos no centro horizontalmente */
+    align-items: center; /* deixa os elementos no centro verticalmente */
+    height: 100vh; /* faz o código pegar toda a tela */
+    margin: 0;
+    padding: 0; /* esse e o margin fazem sumir o scroll da tela */
+    background-image:radial-gradient(orange,white) 
+}
+
+.calculator{ /* chama uma div class */
+    background-color: white;
+    width: 356px; /* largura */
+    border-radius: 48px ; /* deixa as bordas arredondadas */
+    padding: 20px ; /* espaçamento entre os elementos e a borda */
+
+}
+
+#display{  /* pra chamar um id é com # */
+
+width: 228px;
+height: 90px;
+border: none;
+width: 100%;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 140%;
+/* or 50px */
+display: flex;
+align-items: center;
+text-align: right;
+letter-spacing: -0.02em;
+
+color: black;
+background-color: white;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+}
+
+.box-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 frações de colunas de tamanhos iguais */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* 5 frações de linhas de tamanhis iguais */
+    gap:16px;
+
+}
+button{
+   /* border: none; */
+    height: 60px;
+    border-radius:50%;
+    background-color: orange;
+    color: black;
+    font-size: 25px;
+}
+
+button:hover{
+    background-color: rgb(197, 129, 4);
+    cursor: pointer;
+    transition: 0.5s;
+}

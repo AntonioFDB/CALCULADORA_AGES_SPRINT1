@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- link para o CSS funcionar nesse código -->
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculator"> <!--div class abre um grupo de codigos para configurar depois separadamente no css-->
+        <input type="text" disabled id="display"> <!--input é uma entrada de dados, nesse caso o display da calculadora-->   <!-- id serve para nomear -->
+        <div class="box-buttons"> <!--abri um grupo somente para os botões-->
+            <button onclick="back()">&larr;</button> <!-- existem códigos de html para símbolos, como esse para limpar a última ação feita na calculadora-->
+            <button onclick="clean()">C</button>
+            <button onclick="insertToDisplay('%')">%</button>
+            <button onclick="insertToDisplay('&#247')">&#247;</button> <!-- símbolo de divisão -->
+            <button onclick="insertToDisplay('7')">7</button>
+            <button onclick="insertToDisplay('8')">8</button>
+            <button onclick="insertToDisplay('9')">9</button>
+            <button onclick="insertToDisplay('&times')">&times;</button> <!-- símbolo de vezes -->
+            <button onclick="insertToDisplay('4')">4</button>
+            <button onclick="insertToDisplay('5')">5</button>
+            <button onclick="insertToDisplay('6')">6</button>
+            <button onclick="insertToDisplay('-')">-</button>
+            <button onclick="insertToDisplay('1')">1</button>
+            <button onclick="insertToDisplay('2')">2</button>
+            <button onclick="insertToDisplay('3')">3</button>
+            <button onclick="insertToDisplay('+')">+</button>
+            <button onclick="insertToDisplay('&plusmn')">&plusmn;</button> <!-- símbolo de mais ou menos -->
+            <button onclick="insertToDisplay('0')">0</button>
+            <button onclick="insertToDisplay('.')">.</button>
+            <button onclick="result()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
